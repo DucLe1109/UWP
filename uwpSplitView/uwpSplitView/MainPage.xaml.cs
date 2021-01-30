@@ -44,7 +44,7 @@ namespace uwpSplitView
             {
                 NewsManager.GetNews("Financial", NewsItems);
 
-                 TitleTextBlock.Text = "Financial";
+                TitleTextBlock.Text = "Financial";
 
             }
             else if (Food.IsSelected)
@@ -52,6 +52,10 @@ namespace uwpSplitView
                 NewsManager.GetNews("Food", NewsItems);
 
                 TitleTextBlock.Text = "Food";
+
+            }
+            else
+            {
 
             }
         }

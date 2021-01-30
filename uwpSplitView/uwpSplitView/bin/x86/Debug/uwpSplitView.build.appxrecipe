@@ -106,6 +106,9 @@
     <AppxPackagedFile Include="H:\Aptech\Kì 3\UWP\uwpSplitView\uwpSplitView\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="H:\Aptech\Kì 3\UWP\uwpSplitView\uwpSplitView\bin\x86\Debug\split_view_test.xbf">
+      <PackagePath>split_view_test.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>

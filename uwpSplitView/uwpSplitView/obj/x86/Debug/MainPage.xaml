@@ -15,7 +15,7 @@
         </Grid.RowDefinitions>
         <RelativePanel>
             <Button x:ConnectionId='13' x:Name="HamburgerButton"
-                    RelativePanel.AlignLeftWithPanel="True"
+                    RelativePanel.AlignLeftWithPanel="False"
                     FontFamily="Segoe MDL2 Assets"
                     Content="$#xE700"
                     FontSize="20"
@@ -40,67 +40,64 @@
                    DisplayMode="CompactOverlay"
                    OpenPaneLength="150"
                    CompactPaneLength="45">
-        <SplitView.Pane>
-            <ListBox x:ConnectionId='3' SelectionMode="Single"
+            <SplitView.Pane>
+                <ListBox x:ConnectionId='3' SelectionMode="Single"
                                                                 >
-                <ListBoxItem x:ConnectionId='4' x:Name="Financial">
-                    <StackPanel Orientation="Horizontal">
-                        <TextBlock
-                        Text="&#xE80F;"
-                        FontFamily="Segoe MDL2 Assets"
-                        FontSize="20"/>
-                        <TextBlock
-                        Text="Financial"
-                        FontSize="18"
-                        Margin="20,0,0,0"/>
-                    </StackPanel>
-                </ListBoxItem>
+                    <ListBoxItem x:ConnectionId='4' x:Name="Financial">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="&#xE80F;" FontFamily="Segoe MDL2 Assets" FontSize="20"/>
+                            <TextBlock Text="Financial" FontSize="18" Margin="20,0,0,0"/>
+                        </StackPanel>
+                    </ListBoxItem>
 
-
-                <ListBoxItem x:ConnectionId='5' x:Name="Food">
-                    <StackPanel Orientation="Horizontal">
-                        <TextBlock
+                    <ListBoxItem x:ConnectionId='5' x:Name="Food">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock
                         Text="&#xE1CE;"
                         FontFamily="Segoe MDL2 Assets"
                         FontSize="20"/>
-                        <TextBlock
+                            <TextBlock
                         Text="Food"
                         FontSize="18"
                         Margin="20,20,20,20"/>
-                    </StackPanel>
-                </ListBoxItem>
+                        </StackPanel>
+                    </ListBoxItem>
 
+                </ListBox>
 
-            </ListBox>
+            </SplitView.Pane>
 
-        </SplitView.Pane>
-        <SplitView.Content>
-            <GridView x:ConnectionId='6' Name="NewsItemGrid"
+            <SplitView.Content>
+                <GridView x:ConnectionId='6' Name="NewsItemGrid"
                                                       
                       HorizontalAlignment="Stretch"
                       Margin="10,0,0,0">
 
-                <GridView.ItemTemplate>
-                    <DataTemplate                           >
-                        <Grid x:ConnectionId='8' Background="White" Margin="10" Height="275" Width="200">
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="Auto" />
-                                <RowDefinition Height="*" />
-                            </Grid.RowDefinitions>
+                    <GridView.ItemTemplate>
+                        <DataTemplate                           >
+                            <Grid x:ConnectionId='8' Background="White" Margin="10" Height="275" Width="200">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="*" />
+                                </Grid.RowDefinitions>
 
-                            <Image x:ConnectionId='9' x:Name="MyImage"                         />
-                            <RelativePanel Grid.Row="1">
-                                <TextBlock x:ConnectionId='10'                          />
-                                <TextBlock x:ConnectionId='11'                         />
-                                <TextBlock x:ConnectionId='12'                          />
-                            </RelativePanel>
-                        </Grid>
-                    </DataTemplate>
-                </GridView.ItemTemplate>
-            </GridView>
-        </SplitView.Content>
+                                <Image x:ConnectionId='9' x:Name="MyImage"                         />
+                                <StackPanel VerticalAlignment="Center" Grid.Row="1">
+                                    <TextBlock x:ConnectionId='10'                          />
+                                    <TextBlock x:ConnectionId='11'                         />
+                                    <TextBlock x:ConnectionId='12'                          />
+                                </StackPanel>
+                            </Grid>
+                        </DataTemplate>
+                    </GridView.ItemTemplate>
+
+                </GridView>
+
+            </SplitView.Content>
+
         </SplitView>
 
     </Grid>
+
 </Page>
 

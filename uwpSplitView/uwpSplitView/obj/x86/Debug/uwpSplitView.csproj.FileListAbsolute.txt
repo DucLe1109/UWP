@@ -88,3 +88,8 @@ H:\Aptech\Kì 3\UWP\uwpSplitView\uwpSplitView\obj\x86\Debug\qualifiers.txt.inter
 H:\Aptech\Kì 3\UWP\uwpSplitView\uwpSplitView\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 H:\Aptech\Kì 3\UWP\uwpSplitView\uwpSplitView\obj\x86\Debug\ProjectArchitectures.txt
 H:\Aptech\Kì 3\UWP\uwpSplitView\uwpSplitView\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_636885058160000000.json
+H:\Aptech\Kì 3\UWP\uwpSplitView\uwpSplitView\bin\x86\Debug\split_view_test.xbf
+H:\Aptech\Kì 3\UWP\uwpSplitView\uwpSplitView\obj\x86\Debug\split_view_test.g.i.cs
+H:\Aptech\Kì 3\UWP\uwpSplitView\uwpSplitView\obj\x86\Debug\split_view_test.g.cs
+H:\Aptech\Kì 3\UWP\uwpSplitView\uwpSplitView\obj\x86\Debug\split_view_test.xaml
+H:\Aptech\Kì 3\UWP\uwpSplitView\uwpSplitView\obj\x86\Debug\split_view_test.xbf

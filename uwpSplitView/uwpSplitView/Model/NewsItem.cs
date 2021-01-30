@@ -21,7 +21,7 @@ namespace uwpSplitView.Model
             items.Add(new NewsItem()
             {
                 ID = 1,
-                Category = "Financial-1",
+                Category = "Financial",
                 Headline = "Euro",
                 Subhead = "News",
                 Dateline = "29-01-2021",
@@ -30,7 +30,7 @@ namespace uwpSplitView.Model
             items.Add(new NewsItem()
             {
                 ID = 2,
-                Category = "Financial-2",
+                Category = "Financial",
                 Headline = "Gold",
                 Subhead = "News",
                 Dateline = "29-01-2021",
@@ -39,7 +39,7 @@ namespace uwpSplitView.Model
             items.Add(new NewsItem()
             {
                 ID = 3,
-                Category = "Financial-3",
+                Category = "Financial",
                 Headline = "Dollar",
                 Subhead = "News",
                 Dateline = "29-01-2021",
@@ -48,7 +48,7 @@ namespace uwpSplitView.Model
             items.Add(new NewsItem()
             {
                 ID = 4,
-                Category = "Financial-4",
+                Category = "Financial",
                 Headline = "Gold",
                 Subhead = "News",
                 Dateline = "29-01-2021",
@@ -57,7 +57,7 @@ namespace uwpSplitView.Model
             items.Add(new NewsItem()
             {
                 ID = 5,
-                Category = "Financial-5",
+                Category = "Financial",
                 Headline = "Diamond",
                 Subhead = "News",
                 Dateline = "29-01-2021",

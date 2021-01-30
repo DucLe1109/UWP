@@ -35,6 +35,7 @@
       <RootProperty Name="CompactPaneLength" />
       <RootProperty Name="Pane" />
       <RootProperty Name="Content" />
+      <RootProperty Name="IsPaneOpen" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListBox">
       <RootProperty Name="SelectionMode" />
@@ -47,6 +48,7 @@
     <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
       <RootProperty Name="Orientation" />
       <RootProperty Name="Children" />
+      <RootProperty Name="VerticalAlignment" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
       <RootProperty Name="Text" />
@@ -54,6 +56,8 @@
       <RootProperty Name="FontSize" />
       <RootProperty Name="Margin" />
       <RootProperty Name="FontWeight" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HorizontalAlignment" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.GridView">
       <RootProperty Name="Name" />
@@ -86,5 +90,6 @@
       <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="uwpSplitView.MainPage" />
+    <RootType FullName="uwpSplitView.split_view_test" />
   </Roots.RootTypes>
 </Roots>
