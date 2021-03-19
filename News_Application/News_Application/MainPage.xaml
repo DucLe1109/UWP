@@ -1,0 +1,108 @@
+﻿<Page
+    x:Class="News_Application.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:models="using:News_Application.Models"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    
+    <StackPanel>
+        <Button Background="White"
+                        Name="Dwindle_Toogle"
+                        Click="Dwindle_Toogle_Click"
+                        FontFamily="Segoe MDL2 Assets"
+                        Content="$#xE700"
+                        Width="50"
+                        Height="40"
+                        FontSize="24"
+                        VerticalAlignment="Top"
+                        HorizontalAlignment="Left" Margin="15,10,0,20"/>
+        <SplitView IsPaneOpen="True"
+               x:Name="MySplitView"
+           DisplayMode="Inline"
+           OpenPaneLength="80">
+            <SplitView.Pane>
+                <StackPanel Background="#FFDAF0F5">
+
+                    <Button Background="#FFDAF0F5"
+                        Name="home"
+                        Click="home_Click"
+                        Content="&#xE80F;"
+                        FontFamily="Segoe MDL2 Assets"
+                        FontSize="24"
+                        VerticalAlignment="Top"
+                        HorizontalAlignment="Center" Margin="0,24,0,0"/>
+                    <Button  Background="#FFDAF0F5"
+                         Name="book_mark"
+                         Click="book_mark_Click"
+                        Content="&#xE8A4;"
+                        FontFamily="Segoe MDL2 Assets"
+                        FontSize="24"
+                        VerticalAlignment="Top"
+                        HorizontalAlignment="Center" Margin="0,24,0,0"/>
+                </StackPanel>
+
+            </SplitView.Pane>
+
+            <Grid>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition Height="auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0">
+                        <Grid Grid.Row="0">
+                            <StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBox x:Name="q_" Header= "Content" Text="tesla" Margin="5,24,0,10" MaxLength="32" Width="150" HorizontalAlignment="Left"/>
+                                    <TextBox x:Name="from_" Header= "From" Text="2021-02-18" Margin="5,24,0,10" MaxLength="32" Width="150" HorizontalAlignment="Left"/>
+                                    <TextBox x:Name="sortBy_" Header="Sort By" Text="publishedAt" Margin="5,24,0,10" MaxLength="15" Width="150" HorizontalAlignment="Left" />
+                                    <TextBox x:Name="apikey_" Header="Api Key" Text="4761293d0ec74c95952fc8bd26ee3fcf" Margin="5,24,0,10" MaxLength="50" Width="200" HorizontalAlignment="Left"/>
+                                    <Button Margin="20,35,0,0" Width="50" Height="30" Name="search_button" Click="search_button_Click" FontFamily="Segoe MDL2 Assets" Content="&#xE71E;" />
+                                </StackPanel>
+                                <TextBlock Margin="5,20,0,0" Name="note" Foreground="Red" FontSize="25"></TextBlock>
+                            </StackPanel>
+                            
+                        </Grid>
+                    </Grid>
+                    <Grid Grid.Row="1">
+                        <ListView   Name="NewsItemGrid" 
+                                    ItemClick="MewsItemGrid_ItemClick" 
+                                    IsItemClickEnabled="True" 
+                                    ItemsSource="{x:Bind Articles}"
+                                    ScrollViewer.VerticalScrollBarVisibility="Auto">
+                            <ListView.ItemTemplate>
+                                <DataTemplate x:DataType="models:News">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="auto"></RowDefinition>
+                                        </Grid.RowDefinitions>
+                                        <Grid Width="auto" Margin="10">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="2*"></ColumnDefinition>
+                                                <ColumnDefinition Width="8*"></ColumnDefinition>
+                                            </Grid.ColumnDefinitions>
+                                            <Image Margin="0,0,30,0" Grid.Column="0" Width="200" Height="200">
+                                                <Image.Source>
+                                                    <BitmapImage UriSource="{Binding urlToImage}"/>
+                                                </Image.Source>
+                                            </Image>
+                                            <StackPanel Grid.Column="1" Background="White">
+                                                <TextBlock TextWrapping="Wrap" Padding="5,5,5,5" Text="{Binding author}" FontSize="18" Foreground="Brown"></TextBlock>
+                                                <TextBlock TextWrapping="Wrap" Padding="5,5,5,5" Text="{Binding title}" FontSize="20" Foreground="Brown"></TextBlock>
+                                                <TextBlock TextWrapping="Wrap" Padding="5,5,5,5" Text="{Binding description}" FontSize="20" Foreground="Brown"></TextBlock>
+                                            </StackPanel>
+                                        </Grid>
+                                    </Grid>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </Grid>
+                </Grid>
+            </Grid>
+        </SplitView>
+    </StackPanel>
+   
+</Page>
